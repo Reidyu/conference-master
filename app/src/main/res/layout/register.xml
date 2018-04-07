@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <EditText
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/register_username"
+        android:layout_alignParentTop="true"
+        android:hint="请输入您的用户名"
+       />
+
+
+    <EditText
+        android:drawableLeft="@drawable/ic_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的手机号码"
+        android:id="@+id/register_phone"
+        android:inputType="phone"
+        android:ems="11"
+        android:layout_below="@+id/register_username"
+        />
+
+    <EditText
+        android:id="@+id/auth_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_authcode"
+        android:hint="请输入验证码" />
+
+
+
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password"
+        android:hint="请输入您的密码    (至少6位数字或字母）"
+        android:layout_below="@+id/auth_code" />
+
+
+    <EditText
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/register_password_check"
+        android:layout_below="@+id/register_password"
+        android:layout_centerHorizontal="true"
+        android:hint="请确认您的密码   （请保持和密码一致）" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/register_btn_sure"
+        android:textSize="20dp"
+        android:background="#35A854"
+        android:layout_below="@+id/register_password_check"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/register_btn_cancel"
+        android:textSize="20dp"
+        android:background="#E52525"
+        android:layout_below="@+id/register_btn_sure"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/register_btn_auth"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register_password"
+        android:layout_alignRight="@+id/register_phone"
+        android:layout_below="@+id/register_phone"
+        android:layout_marginBottom="-1dp"
+        android:layout_marginTop="-13dp"
+        android:text="获取验证码" />
+
+</RelativeLayout>

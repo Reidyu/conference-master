@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="place">
+        <item>成都</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>杭州</item>
+        <item>深圳</item>
+        <item>大连</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>培训会议</item>
+        <item>专题讨论会</item>
+        <item>年会</item>
+        <item>讲座</item>
+        <item>文化交流会</item>
+    </string-array>
+</resources>
